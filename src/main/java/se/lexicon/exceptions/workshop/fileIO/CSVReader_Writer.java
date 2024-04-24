@@ -36,7 +36,7 @@ public class CSVReader_Writer {
                 try {
                     reader.close();
                 } catch (IOException e) {
-                    System.out.println(e.getMessage());
+                   throw new RuntimeException(e);
                 }
             }
         }
